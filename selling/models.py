@@ -21,6 +21,8 @@ class Products(models.Model):
     image1= models.ImageField()
     image2= models.ImageField()
     image3= models.ImageField()
+    def __str__(self):
+          return self.name
 
 class Properties(models.Model):
     products=models.ForeignKey(Products, on_delete=models.CASCADE)   
@@ -28,3 +30,4 @@ class Properties(models.Model):
     internal=models.CharField(max_length=100)
     processor=models.CharField(max_length=100)
     Defficiency=models.TextField(max_length=1000)
+    

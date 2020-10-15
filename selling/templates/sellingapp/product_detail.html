@@ -1,0 +1,188 @@
+{% load static  %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+    <ul class="nav justify-content-end  " style="background-color:green;
+    " >
+         <li class="nav-item">
+           <a class="nav-link active text-white" href="#"> <img style="width: 25px;" src="{% static 'images/watsao.jpg' %}" >  0735475563</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link text-white" href="#"> <img style="width: 25px;"  src="{% static  'images/email.jpg'  %}" alt=""> michaelkilongoo193@gmail.com</a>
+         </li>
+         <li class="nav-item ">
+           <a class="nav-link text-white" href="#">Kijitonyama</a>
+         </li>
+        
+   </ul>
+
+
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-green text-white" style="background-color: yellowgreen; color:white  "  >
+         <a class="navbar-brand" href="#">telcomic</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNavDropdown">
+           <ul class="navbar-nav">
+             <li class="nav-item active">
+               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+             </li>
+
+
+             <li class="nav-item dropdown">
+               <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Buyers</a>
+               <div class="dropdown-menu">
+                 
+                 <a class="dropdown-item" href="#">Sellers</a>
+                 
+               </div>
+             </li>
+
+
+
+             <li class="nav-item">
+               <a class="nav-link" href="#">About us</a>
+             </li>
+             
+           </ul>
+         </div>
+            
+
+              <ul class="text d-inline-flex ">
+                     <a class="btn btn-outline-warning mx-3" href="{% url 'loginpage'  %}">login</a>
+                     <a href="#"> <img  style="width: 40px;" src="{% static 'images/cart.png' %}"><span class="badge badge-pill badge-warning">0</span></a>
+
+
+              </ul>
+
+   </nav>
+
+
+
+
+
+
+
+
+
+
+            <div class="container-fluid">
+                <div class="row" >
+                    <div class="col-md-6 col-sm-12 shadow" >
+                        <img style="width: 400px;" class="img-fluid" src="{{product.image2.url}}" alt="">
+
+
+                    </div>
+                    <div class=" col-md-6 col-sm-12 shadow" >
+
+                         <!--start-->
+                        <img style="width: 400px;" class="img-fluid" src="{{product.image3.url}}" alt="">
+
+                        
+                         
+
+
+
+                         <!--endnow-->
+
+
+                    </div>
+
+      </div>
+ </div>
+
+  <div class="container text-center   " >
+        <div class="row" >
+            <div class="col-12">
+
+                <h3> name </h3><br>
+                <h3> category </h3><br>
+                <h3> VENDOR </h3><br>
+                <h3> pROCESSOR </h3><br>
+                <h3> ram</h3><br>
+                <h3> IINTER STORAGE </h3><br>
+                  <input type="number" name="quantity" ><br>
+                <input type="button" class="btn btn-success" value="add to Cart">
+
+
+
+
+            </div>
+            
+
+
+
+
+        </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

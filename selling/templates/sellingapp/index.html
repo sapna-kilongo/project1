@@ -29,26 +29,20 @@
 
 
           <nav class="navbar navbar-expand-lg navbar-light bg-green text-white" style="background-color: yellowgreen; color:white  "  >
-                <a class="navbar-brand" href="#">telcomic</a>
+                <a class="navbar-brand" href="{% url 'index'  %}">telcomic</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                   <ul class="navbar-nav">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="{% url 'index'  %}">Home <span class="sr-only">(current)</span></a>
                     </li>
 
-
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Buyers</a>
-                      <div class="dropdown-menu">
-                        
-                        <a class="dropdown-item" href="#">Sellers</a>
-                        
-                      </div>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Sellers</a>
                     </li>
-
+                   
 
 
                     <li class="nav-item">
@@ -65,7 +59,7 @@
                     </ul>
 
                      <ul class="text d-inline-flex ">
-                            <a class="btn btn-outline-warning mx-3" href="#">login</a>
+                            <a class="btn btn-outline-warning mx-3" href="{% url 'loginpage' %}">login</a>
                             <a href="#"> <img  style="width: 40px;" src="{% static 'images/cart.png' %}"><span class="badge badge-pill badge-warning">0</span></a>
 
 
@@ -95,45 +89,21 @@
 
           <div class="container-fluid">
              <div class="row ">
+               {% for product in products %}
                   <div class="col-md-4 col-xs-12" >
                           <div class="box-element" >
-                            <img class="img-fluid" src="{% static 'images/product05.png' %}" alt="">
-                             <p>samsung galaxy</p>
-                             <p>available</p>
-                             <p>TZS 5000</p>
-                             <button class="btn btn-outline-secondary">view</button>
-                             <button class="btn btn-outline-secondary">Add cart</button>
+                            <img class="img-fluid" src="{{product.image1.url }}" alt="">
+                             <p>{{ product.name }}</p>
+                             <p> available : {{product.quantinty}}</p>
+                             <p>TZS :{{product.price}}</p>
+                             <a class="btn btn-outline-secondary" href="{% url 'check' product.id %}">view</a>
+                             <a class="btn btn-outline-secondary" href="#">Add to Cart</a>
+
 
                           </div>
                     </div>
-                    <div class="col-md-4 col-xs-12" >
-                        <div class="box-element" >
-                          <span class="badge badge-secondary">New</span>
-                          <img class="img-fluid" src="{% static 'images/product07.png' %}" alt="">
-                             <p>samsung galaxy</p>
-                             <p>available</p>
-                             <p>TZS 75000</p>
-                             <button class="btn btn-outline-secondary">view</button>
-                             <button class="btn btn-outline-secondary">Add cart</button>
-
-
-                        </div>
-                      </div>
-                      <div class="col-md-4 col-xs-12" >
-                            <div class="box-element" >
-                               <img class="img-fluid" src="{% static 'images/product08.png' %}" alt="">
-                               <p>samsung galaxy</p>
-                               <p>available</p>
-                               <p>TZS 350000</p>
-                               <button class="btn btn-outline-secondary">view</button>
-                               <button class="btn btn-outline-secondary">Add cart</button>
-  
-                            
-
-
-                            </div>
-                      </div>
-
+                    {% endfor %}
+                   
 
 
           </div>
