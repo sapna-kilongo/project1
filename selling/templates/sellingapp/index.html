@@ -1,0 +1,233 @@
+ {% load static %}
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body>
+          
+  
+    <!--navbar-->
+          <ul class="nav justify-content-end " style="background-color:green;
+           color:white " >
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">0735475563</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> <img style="width: 25px;"  src="{% static  'images/email.jpg'  %}" alt=""> michaelkilongoo193@gmail.com</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="#">Kijitonyama</a>
+                </li>
+               
+          </ul>
+
+
+
+          <nav class="navbar navbar-expand-lg navbar-light bg-light " style="background-color: yellowgreen; color:white  "  >
+                <a class="navbar-brand" href="#">telcomic</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Buyers</a>
+                      <div class="dropdown-menu">
+                        
+                        <a class="dropdown-item" href="#">Sellers</a>
+                        
+                      </div>
+                    </li>
+
+
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About us</a>
+                    </li>
+                    
+                  </ul>
+                </div>
+          </nav>
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">All</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Computer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Smartphones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Others</a>
+            </li>
+          </ul>
+        
+
+         {% block content %}
+<!--end here-->
+<!-- body start---->
+
+
+          <div class="container-fluid">
+             <div class="row ">
+                  <div class="col-md-4 col-xs-12" >
+                          <div class="box-element" >
+                            <img class="img-fluid" src="{% static 'images/product05.png' %}" alt="">
+                             <p>samsung galaxy</p>
+                             <p>available</p>
+                             <p>TZS 5000</p>
+                             <button class="btn btn-outline-secondary">view</button>
+                             <button class="btn btn-outline-secondary">Add cart</button>
+
+                          </div>
+                    </div>
+                    <div class="col-md-4 col-xs-12" >
+                        <div class="box-element" >
+                          <span class="badge badge-secondary">New</span>
+                          <img class="img-fluid" src="{% static 'images/product07.png' %}" alt="">
+                             <p>samsung galaxy</p>
+                             <p>available</p>
+                             <p>TZS 75000</p>
+                             <button class="btn btn-outline-secondary">view</button>
+                             <button class="btn btn-outline-secondary">Add cart</button>
+
+
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-xs-12" >
+                            <div class="box-element" >
+                               <img class="img-fluid" src="{% static 'images/product08.png' %}" alt="">
+                               <p>samsung galaxy</p>
+                               <p>available</p>
+                               <p>TZS 350000</p>
+                               <button class="btn btn-outline-secondary">view</button>
+                               <button class="btn btn-outline-secondary">Add cart</button>
+  
+                            
+
+
+                            </div>
+                      </div>
+
+
+
+          </div>
+          </div>
+                       <!--pegination-->
+                      
+                       <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-center">
+                          <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1">Previous</a>
+                          </li>
+                          <li class="page-item"><a class="page-link" href="#">1</a></li>
+                          <li class="page-item"><a class="page-link" href="#">2</a></li>
+                          <li class="page-item"><a class="page-link" href="#">3</a></li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                          </li>
+                        </ul>
+
+
+
+                       <!--end of peggination-->
+
+
+
+                    <div class="jumbotron justfy justify-content-center text-center" >
+                        <div class="container ">
+                             <form  >
+                                <label for="email" ></label>
+                                <input style="width: 400px; height:40px;"  type="text" name="email" id="email" placeholder="write your comment here">
+                                <input class="btn btn-danger btn-lg" type="button" value="subscribe">
+
+
+                             </form>
+                             <p>for more infrmation about selling anfd buying write your</p>
+                              <p>email for more communication and subscribe you unterest with our service
+                             </p>
+
+
+                        </div>
+
+                         
+
+
+                    </div>
+<!--footer start-->
+
+<!-- Footer -->
+<footer class="page-footer font-small cyan darken-3">
+
+  <!-- Footer Elements -->
+  <div class="container-fluid"  style="background-color:green;" >
+
+    <!-- Grid row-->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-12 py-5">
+        <div class="mb-5 flex-center text-center  "  >
+
+          <!-- Facebook -->
+          <a href="#" class="size">
+            <img  style="width: 100px;"  src="{% static 'images/facebook.png'  %}" alt="">
+          </a>
+          <!-- Twitter -->
+          <a href="#" class="size">
+            <img style="width: 100px;"  src="{% static 'images/twitter.png'  %}" alt="">
+          </a>
+          <!-- watsup +-->
+          <a href="#" class="size">
+            <img   style="width: 100px;" src="{% static 'images/watsao.jpg'  %}" alt="">
+          </a>
+          <a href="#"class="size" >
+            <img   style="width: 150px;" src="{% static 'images/instagram.jpg'  %}" alt="">
+          </a>
+          <!--Instagram-->
+          <a href="#"  >
+            <img  style="width: 150px;"   src="{% static 'images/email.jpg'  %}" alt="">
+          </a>
+         
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+
+  </div>
+  <!-- Footer Elements -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+<script src="{% static 'js/bootstrap.min.js'  %}"></script>
+<script src="{% static 'js/jquery.js'  %}"></script>
+
+{% endblock %}
+
+		
+              
+    
+</body>
+</html>
+
+
+

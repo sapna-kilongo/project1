@@ -1,0 +1,12 @@
+body{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.box-element{
+    width: 350px;
+    box-shadow:hsl(0, 0%,80%) 0 0 16px;
+    text-align: center;
+    margin:10px ;
+}
