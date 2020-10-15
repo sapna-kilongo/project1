@@ -6,5 +6,5 @@ def index(request):
     return render(request,'sellingapp/index.html')
 
 def check(request):
-    return render(request,'sellingapp/view.html')    
+    return render(request,'sellingapp/cart.html')    
     

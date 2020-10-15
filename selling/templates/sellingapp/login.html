@@ -1,0 +1,129 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="{%  static 'css/login.css' %}">
+    <link rel="stylesheet" href="{%  static 'css/bootstrap.min.css' %}">
+</head>
+<body>  
+
+
+    <ul class="nav justify-content-end  " style="background-color:green;
+    " >
+         <li class="nav-item">
+           <a class="nav-link active text-white" href="#"> <img style="width: 25px;" src="{% static 'images/watsao.jpg' %}" >  0735475563</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link text-white" href="#"> <img style="width: 25px;"  src="{% static  'images/email.jpg'  %}" alt=""> michaelkilongoo193@gmail.com</a>
+         </li>
+         <li class="nav-item ">
+           <a class="nav-link text-white" href="#">Kijitonyama</a>
+         </li>
+        
+   </ul>
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-green text-white" style="background-color: yellowgreen; color:white  "  >
+    <a class="navbar-brand" href="#">telcomic</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Buyers</a>
+          <div class="dropdown-menu">
+            
+            <a class="dropdown-item" href="#">Sellers</a>
+            
+          </div>
+        </li>
+
+
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">About us</a>
+        </li>
+        
+      </ul>
+    </div>
+        
+
+         <ul class="text d-inline-flex ">
+              
+                <a href="#"> <img  style="width: 40px;" src="{% static 'images/cart.png' %}"><span class="badge badge-pill badge-warning">0</span></a>
+
+
+         </ul>
+
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+    <!--login-->
+    <div class="row">
+        <div class="col-md-6 col-sm-12 mx-auto p-0">
+            <div class="card">
+                <div class="login-box my-4">
+                    <div class="login-snip"> <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label> <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+                        <div class="login-space">
+                            <div class="login">
+                                <div class="group"> <label for="user" class="label">Username</label> <input id="user" type="text" class="input" placeholder="Enter your username"> </div>
+                                <div class="group"> <label for="pass" class="label">Password</label> <input id="pass" type="password" class="input" data-type="password" placeholder="Enter your password"> </div>
+                                <div class="group"> <input id="check" type="checkbox" class="check" checked> <label for="check"><span class="icon"></span> Keep me Signed in</label> </div>
+                                <div class="group"> <input type="submit" class="button" value="Sign In"> </div>
+                                <div class="hr"></div>
+                                <div class="foot"> <a href="#">Forgot Password?</a> </div>
+                            </div>
+                            <div class="sign-up-form">
+                                <div class="group"> <label for="user" class="label">Username</label> <input id="user" type="text" class="input" placeholder="Create your Username"> </div>
+                                <div class="group"> <label for="pass" class="label">Password</label> <input id="pass" type="password" class="input" data-type="password" placeholder="Create your password"> </div>
+                                <div class="group"> <label for="pass" class="label">Repeat Password</label> <input id="pass" type="password" class="input" data-type="password" placeholder="Repeat your password"> </div>
+                                <div class="group"> <label for="pass" class="label">Email Address</label> <input id="pass" type="text" class="input" placeholder="Enter your email address"> </div>
+                                <div class="group"> <input type="submit" class="button" value="Sign Up"> </div>
+                                <div class="hr"></div>
+                                <div class="foot"> <label for="tab-1">Already Member?</label> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--end login-->
+
+
+
+<script src="{% static 'js/bootstrap.min.js'  %}"> </script>
+<script src="{% static 'js/jquery.js'  %}"> </script>
+
+    
+</body>
+</html>
